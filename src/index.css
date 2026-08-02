@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Respect the notch and the home indicator on iPhone */
+#root {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Keep iOS from zooming when a field takes focus */
+input, textarea, select { font-size: 16px; }
